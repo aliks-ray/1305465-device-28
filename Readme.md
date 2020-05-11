@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Alexandra Kovalchuk](https://up.htmlacademy.ru/htmlcss/28/user/1305465).
-* Наставник: [Сергей Зубов] (https://up.htmlacademy.ru/htmlcss/28/user/208340).
+* Наставник: [Сергей Зубов](https://up.htmlacademy.ru/htmlcss/28/user/208340).
 
 ---
 
