@@ -77,11 +77,47 @@
     </section>
     <section>
       <h2>Фильтр товаров</h2>
-      <p>Фильтр:</p>
-      <p>Стоимость</p>
-      <p>Цвет</p>
-      <p>Bluetooth</p>
-      <button type="button">Показать</button>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="filter-color-black" checked></input>
+              <label for="filter-color-black">Чёрный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="filter-color-white"></input>
+              <label for="filter-color-white">Белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="filter-color-blue" checked></input>
+              <label for="filter-color-blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="filter-color-red" checked></input>
+              <label for="filter-color-red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="filter-color-pink"></input>
+              <label for="filter-color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="bluetooth" value="yes" id="yes-bluetooth" checked></input>
+              <label for="yes-bluetooth">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth" value="no" id="no-bluetooth"></input>
+              <label for="no-bluetooth">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
       <h2>Список моноподов для селфи</h2>
