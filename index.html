@@ -12,7 +12,7 @@
     <nav>
       <form action="https://echo.htmlacademy.ru" method="get">
         <input type="search" placeholder="Поиск по сайту" autofocus>
-        <input type="submit" value="Найти">
+        <button type="submit">Найти</button>
       </form>
       <a href="">Войти</a>
       <a href="">Сравнить</a>
@@ -277,18 +277,24 @@
     <h1 class="visually-hidden">Напишите нам</h1>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="name">Ваше имя:</label>
-        <input id="name" name="name" type="text" placeholder="Имя Фамилия">
+        <label>
+          <span>Ваше имя:</span>
+          <input name="name" type="text" placeholder="Имя Фамилия">
+        </label>
       </p>
       <p>
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" name="email" type="email" placeholder="email@example.com" required>
+        <label>
+          <span>Ваш e-mail:</span>
+          <input name="email" type="email" placeholder="email@example.com" required>
+        </label>
       </p>
       <p>
-        <label for="message">Текст письма:</label>
-        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+        <label>
+          <span>Текст письма:</span>
+          <textarea name="message" placeholder="В свободной форме"></textarea>
+        </label>
       </p>
-      <input type="submit" value="Отправить">
+      <button type="submit">Отправить</button>
     </form>
   </section>
 
