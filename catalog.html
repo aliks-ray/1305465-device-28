@@ -3,54 +3,59 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов «Device»</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <a href="index.html">
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
+      <img class="logo-device" src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
     </a>
-    <nav>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" placeholder="Поиск по сайту" autofocus>
-        <button type="submit">Найти</button>
-      </form>
-      <a href="">Войти</a>
-      <a href="">Сравнить</a>
-      <a href="">Корзина</a>
-      <ul>
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <ul>
-            <li>
-              <a href="">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="">Умные часы</a>
-            </li>
-            <li>
-              <a href="">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">Доставка</a>
-        </li>
-        <li>
-          <a href="">Гарантия</a>
-        </li>
-        <li>
-          <a href="">Контакты</a>
-        </li>
-      </ul>
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-field" type="search" placeholder="Поиск по сайту" autofocus>
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <a href="">Войти</a>
+        <a href="">Сравнить</a>
+        <a href="">Корзина</a>
+        <ul class="site-navigation">
+          <li>
+            <a href="catalog.html" class="catalog-link">Каталог товаров</a>
+            <ul class="site-navigation-catalog">
+              <li>
+                <a href="">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="">Умные часы</a>
+              </li>
+              <li>
+                <a href="">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Доставка</a>
+          </li>
+          <li>
+            <a href="">Гарантия</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -79,14 +84,10 @@
           <a href="">По популярности</a>
         </li>
         <li>
-          <a href="" aria-label="От меньшего к большему">
-            <div></div>
-          </a>
+          <a href="" aria-label="От меньшего к большему"></a>
         </li>
         <li>
-          <a href="" aria-label="От большего к меньшему">
-            <div></div>
-          </a>
+          <a href="" aria-label="От большего к меньшему"></a>
         </li>
       </ul>
     </section>

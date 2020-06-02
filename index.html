@@ -3,54 +3,60 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов «Device»</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <a>
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
+      <img class="logo-device" src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
     </a>
-    <nav>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" placeholder="Поиск по сайту" autofocus>
-        <button type="submit">Найти</button>
-      </form>
-      <a href="">Войти</a>
-      <a href="">Сравнить</a>
-      <a href="">Корзина</a>
-      <ul>
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <ul>
-            <li>
-              <a href="">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="">Умные часы</a>
-            </li>
-            <li>
-              <a href="">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">Доставка</a>
-        </li>
-        <li>
-          <a href="">Гарантия</a>
-        </li>
-        <li>
-          <a href="">Контакты</a>
-        </li>
-      </ul>
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-field" type="search" placeholder="Поиск по сайту" autofocus>
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <a href="">Войти</a>
+        <a href="">Сравнить</a>
+        <a href="">Корзина</a>
+        <ul class="site-navigation">
+          <li>
+            <a href="catalog.html" class="catalog-link">Каталог товаров</a>
+            <ul class="site-navigation-catalog">
+              <li>
+                <a href="">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="">Умные часы</a>
+              </li>
+              <li>
+                <a href="">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Доставка</a>
+          </li>
+          <li>
+            <a href="">Гарантия</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -74,7 +80,7 @@
           </label>
         </li>
       </ul>
-      <div>
+      <div class="main-slider-slide1">
         <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
         <img src="img/slider-1.png" width="384" height="486" alt="Фото самой длинной палки для селфи">
         <p>Делай селфи, как Бен Стиллер!</p>
@@ -93,7 +99,7 @@
           </tr>
         </table>
       </div>
-      <div>
+      <div class="main-slider-slide2">
         <h3 class="visually-hidden">Мотивирующий фитнес-браслет</h3>
         <img src="img/slider-2.png" width="345" height="485" alt="Фото мотивирующего фитнес-браслета">
         <p>Худеем правильно!</p>
@@ -108,7 +114,7 @@
           </tr>
         </table>
       </div>
-      <div>
+      <div class="main-slider-slide3">
         <h3 class="visually-hidden">Квадрокоптер, оснащенный лазером</h3>
         <img src="img/slider-3.png" width="526" height="334" alt="Фото квадрокоптера, оснащенного лазером">
         <p>Порхает как бабочка, жалит как пчела!</p>
