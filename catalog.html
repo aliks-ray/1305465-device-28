@@ -59,8 +59,8 @@
     </nav>
   </header>
   <main>
-    <h1>Моноподы для селфи</h1>
-    <ul>
+    <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
       <li>
         <a href="index.html">Главная</a>
       </li>
@@ -72,7 +72,7 @@
       </li>
     </ul>
     <section>
-      <h2>Сортировка:</h2>
+      <h2 class="sorting-title">Сортировка:</h2>
       <ul>
         <li>
           <a href="">По цене</a>
@@ -92,10 +92,10 @@
       </ul>
     </section>
     <section>
-      <h2>Фильтр:</h2>
+      <h2 class="filter-title">Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <!--Тут будет бегунок с ценой-->
-        <fieldset>
+        <fieldset class="filter-block">
           <legend>Цвет</legend>
           <ul>
             <li>
@@ -130,7 +130,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-block">
           <legend>Bluetooth</legend>
           <ul>
             <li>
@@ -150,52 +150,52 @@
         <button type="submit">Показать</button>
       </form>
     </section>
-    <section>
+    <section class="catalog-list">
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
       <ul>
-        <li>
+        <li class="catalog-item">
           <p>
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button-to-basket" type="button">В корзину</button>
+            <button class="button-compare"  type="button">Добавить к сравнению</button>
           </p>
           <a href="">
             <h3>Любительская селфи-палка</h3>
           </a>
-          <p>500 ₽</p>
+          <p>500 руб.</p>
         </li>
-        <li>
+        <li class="catalog-item">
           <p>
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button-to-basket" type="button">В корзину</button>
+            <button class="button-compare" type="button">Добавить к сравнению</button>
           </p>
           <a href="">
             <h3>Профессиональная селфи-палка</h3>
           </a>
-          <p>1500 ₽</p>
+          <p>1500 руб.</p>
         </li>
-        <li>
+        <li class="catalog-item">
           <p>
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button-to-basket" type="button">В корзину</button>
+            <button class="button-compare"  type="button">Добавить к сравнению</button>
           </p>
           <a href="">
             <h3>Непотопляемая селфи-палка</h3>
           </a>
-          <p>2500 ₽</p>
+          <p>2500 руб.</p>
         </li>
-        <li>
+        <li class="catalog-item">
           <p>
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button-to-basket" type="button">В корзину</button>
+            <button class="button-compare"  type="button">Добавить к сравнению</button>
           </p>
           <a href="">
             <h3>Селфи-палка «Следуй за мной»</h3>
           </a>
-          <p>4900 ₽</p>
+          <p>4900 руб.</p>
         </li>
       </ul>
       <button type="button" disabled>Назад</button>
@@ -206,42 +206,46 @@
     </section>
   </main>
   <footer>
-    <a>
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
-    </a>
-    <a href="">Войти</a>
-    <a href="">Сравнить</a>
-    <a href="">Корзина</a>
-    <p>г.Москва ул. Строителей, 15</p>
-    <ul>
-      <li>
-        <a href="">Доставка</a>
-      </li>
-      <li>
-        <a href="">Гарантия</a>
-      </li>
-      <li>
-        <a href="">Контакты</a>
-      </li>
-    </ul>
-    <a href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
-    <section>
-      <h2 class="visually-hidden">Мы в соцсетях</h2>
-      <ul>
+    <div class="footer-container">
+      <a>
+        <img class="logo" src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
+      </a>
+      <div class="footer-menu">
+        <a href="">Войти</a>
+        <a href="">Сравнить</a>
+        <a href="">Корзина</a>
+      </div>
+      <p>г.Москва ул. Строителей, 15</p>
+      <ul class="footer-services site-navigation">
         <li>
-          <a href="">Facebook</a>
+          <a href="">Доставка</a>
         </li>
         <li>
-          <a href="">Instagram</a>
+          <a href="">Гарантия</a>
         </li>
         <li>
-          <a href="">Twitter</a>
+          <a href="">Контакты</a>
         </li>
       </ul>
-    </section>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-html.svg" width="27" height="34" alt="Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
-    </a>
+      <a href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
+      <section>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="socials">
+          <li>
+            <a class="social-facebook" href="" aria-label="Facebook"></a>
+          </li>
+          <li>
+            <a class="social-instagram" href="" aria-label="Instagram"></a>
+          </li>
+          <li>
+            <a class="social-twitter" href="" aria-label="Twitter"></a>
+          </li>
+        </ul>
+      </section>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="logo" src="img/logo-html.svg" width="27" height="34" alt="Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
+      </a>
+    </div>
   </footer>
 </body>
 </html>

@@ -11,7 +11,7 @@
 <body>
   <header>
     <a>
-      <img class="logo-device" src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
+      <img class="logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
     </a>
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
@@ -190,17 +190,17 @@
       <button type="button">Доставка</button>
       <button type="button">Гарантия</button>
       <button type="button">Кредит</button>
-      <div>
+      <div class="services-delivery-slide">
         <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         <img src="img/delivery.svg" width="136" height="164" alt="Графичное изображение курьера">
       </div>
-      <div>
+      <div class="services-warranty-slide">
         <h3>Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         <img src="img/warranty.svg" width="136" height="164" alt="Графичное изображение обращения по гарантии">
       </div>
-      <div>
+      <div class="services-credit-slide">
         <h3>Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         <img src="img/credit.svg" width="136" height="164" alt="Графичное изображение человека с кредитной картой">
@@ -223,66 +223,72 @@
         </li>
       </ul>
     </section>
-    <section>
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul>
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a href="">Подробнее о нас</a>
-    </section>
-    <section>
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <a href="">
-        <img src="img/map-1.jpg" width="560" height="222" alt="Наш адрес на карте">
-      </a>
-      <a href="">Напишите нам</a>
-    </section>
+    <div class="index-columns">
+      <section class="about-us">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button" href="">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="">
+          <img src="img/map-1.jpg" width="560" height="222" alt="Наш адрес на карте">
+        </a>
+        <a class="button" href="">Напишите нам</a>
+      </section>
+    </div>
   </main>
   <footer>
-    <a>
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
-    </a>
-    <a href="">Войти</a>
-    <a href="">Сравнить</a>
-    <a href="">Корзина</a>
-    <p>г.Москва ул. Строителей, 15</p>
-    <ul>
-      <li>
-        <a href="">Доставка</a>
-      </li>
-      <li>
-        <a href="">Гарантия</a>
-      </li>
-      <li>
-        <a href="">Контакты</a>
-      </li>
-    </ul>
-    <a href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
-    <section>
-      <h2 class="visually-hidden">Мы в соцсетях</h2>
-      <ul>
+    <div class="footer-container">
+      <a>
+        <img class="logo" src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
+      </a>
+      <div class="footer-menu">
+        <a href="">Войти</a>
+        <a href="">Сравнить</a>
+        <a href="">Корзина</a>
+      </div>
+      <p>г.Москва ул. Строителей, 15</p>
+      <ul class="footer-services site-navigation">
         <li>
-          <a href="">Facebook</a>
+          <a href="">Доставка</a>
         </li>
         <li>
-          <a href="">Instagram</a>
+          <a href="">Гарантия</a>
         </li>
         <li>
-          <a href="">Twitter</a>
+          <a href="">Контакты</a>
         </li>
       </ul>
-    </section>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-html.svg" width="27" height="34" alt="Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
-    </a>
+      <a href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
+      <section>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="socials">
+          <li>
+            <a class="social-facebook" href="" aria-label="Facebook"></a>
+          </li>
+          <li>
+            <a class="social-instagram" href="" aria-label="Instagram"></a>
+          </li>
+          <li>
+            <a class="social-twitter" href="" aria-label="Twitter"></a>
+          </li>
+        </ul>
+      </section>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="logo" src="img/logo-html.svg" width="27" height="34" alt="Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
+      </a>
+    </div>
   </footer>
 
-  <section>
+  <section class="popup-write-us">
     <h1 class="visually-hidden">Напишите нам</h1>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
@@ -308,7 +314,7 @@
     <button type="button">Закрыть</button>
   </section>
 
-  <section>
+  <section class="popup-map">
     <h1 class="visually-hidden">Как до нас добраться</h1>
     <!--здесь будет карта -->
     <button type="button">Закрыть</button>
