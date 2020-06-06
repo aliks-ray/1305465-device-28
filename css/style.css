@@ -16,18 +16,38 @@
 /*---------- Fonts ----------*/
 
 @font-face {
-  font-family: "gilroy-extra-bold";
-  src: url("gilroyextrabold.woff2") format("woff2"),
-       url("gilroyextrabold.woff") format("woff");
-  font-weight: normal;
+  font-family: "Gilroy";
+  src: url("fonts/gilroyextrabold.woff2") format("woff2"),
+       url("fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "gilroy-light";
-  src: url("gilroylight.woff2") format("woff2"),
-       url("gilroylight.woff") format("woff");
-  font-weight: normal;
+  font-family: "Gilroy";
+  src: url("fonts/gilroylight.woff2") format("woff2"),
+       url("fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+       local("OpenSans"),
+       url("fonts/opensans.woff2") format("woff2"),
+       url("fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light"),
+       local("OpenSansLight"),
+       url("fonts/opensanslight.woff2") format("woff2"),
+       url("fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -92,7 +112,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -182,7 +202,7 @@ form:hover .search-button {
 /*---------- Index columns ----------*/
 
 .index-columns h2 {
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -191,7 +211,7 @@ form:hover .search-button {
 }
 
 .index-columns a {
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -210,7 +230,7 @@ form:hover .search-button {
 
 .about-us li {
   list-style: none;
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -245,7 +265,7 @@ form:hover .search-button {
 .footer-services,
 .socials {
   list-style: none;
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -292,7 +312,7 @@ form:hover .search-button {
 /*---------- CATALOG PAGE ----------*/
 
 .breadcrumbs-title {
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -318,7 +338,7 @@ form:hover .search-button {
 }
 
 .filter-block legend {
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -327,7 +347,7 @@ form:hover .search-button {
 
 .sorting-title,
 .filter-title {
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -346,7 +366,7 @@ form:hover .search-button {
 }
 
 .catalog-list h3{
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -355,7 +375,7 @@ form:hover .search-button {
 }
 
 .catalog-list p{
-  font-family: "gilroy-light", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -368,7 +388,7 @@ form:hover .search-button {
 
 .button-to-basket{
   border: none;
-  font-family: "gilroy-extra-bold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
