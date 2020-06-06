@@ -164,11 +164,11 @@ img {
   background-color: var(--basic-black);
 }
 
-form .search-button {
+.search-form .search-button {
   visibility: hidden;
 }
 
-form:hover .search-button {
+.search-form:hover .search-button {
   visibility: visible;
 }
 
