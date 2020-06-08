@@ -413,3 +413,52 @@ img {
 .button-compare {
   display: none;
 }
+
+/*---------- Pagination ----------*/
+
+.pagination-container {
+  min-width: 760px;
+  min-height: 70px;
+  background-color: var(--basic-grey-light);
+}
+
+.pagination-buttons {
+  min-width: 120px;
+  min-height: 70px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.pagination-buttons:hover {
+  outline: none;
+  background-color: #D9D9D9;
+}
+
+.pagination-buttons:active {
+  outline: none;
+  background-color: #D9D9D9;
+  opacity: 0.3;
+}
+
+.pagination-pages {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.pagination-1 {
+  opacity: 1;
+}
