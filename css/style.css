@@ -326,7 +326,7 @@ img {
   opacity: 0.1;
 }
 
-/*---------- Filter ----------*/
+/*---------- Filter & sorting ----------*/
 
 .filter-block {
   border: none;
@@ -350,9 +350,54 @@ img {
   text-transform: uppercase;
 }
 
-.filter-block li {
+.filter-block li,
+.sorting li {
   list-style: none;
 }
+
+.sorting-option {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.sorting-option:hover {
+  opacity: 0.6;
+}
+
+.sorting-option:active {
+  opacity: 1;
+}
+
+.sorting-less-more {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.sorting-more-less {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+}
+
+.sorting-less-more:hover,
+.sorting-more-less:hover {
+  opacity: 0.4;
+}
+
+.sorting-less-more:active,
+.sorting-more-less:active {
+  opacity: 1;
+}
+
+
 
 /*---------- Catalog ----------*/
 
