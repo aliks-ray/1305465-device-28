@@ -143,9 +143,14 @@ img {
 
 /*----- Search -----*/
 
+.search-form {
+  font-size: 0;
+}
+
 .search-button {
   width: 84px;
   height: 50px;
+  font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
   color: var(--basic-black);
@@ -154,33 +159,39 @@ img {
   border-color: var(--basic-black);
 }
 
+.search-form .search-button {
+  visibility: hidden;
+}
+
+.search-field:focus + .search-button {
+  visibility: visible;
+}
+
 .search-button:hover {
   color: var(--basic-white);
   background-color: var(--basic-black);
 }
 
 .search-button:active {
+  visibility: visible;
   color: rgba(255,255,255,0.3);
+  outline: none;
   background-color: var(--basic-black);
 }
 
-.search-form .search-button {
-  visibility: hidden;
-}
-
-.search-form:hover .search-button {
-  visibility: visible;
-}
-
 .search-field {
+  width: 390px;
   height: 50px;
   border: 0;
   background-color: transparent;
+  font-size: 15px;
   opacity: 0.3;
   outline: none;
+  vertical-align: bottom;
 }
 
 .search-field:focus {
+  border-bottom: 2px solid var(--basic-black);
   opacity: 1;
 }
 
