@@ -205,6 +205,27 @@ img {
   display: none;
 }
 
+/*---------- Popular ----------*/
+.popular li {
+  list-style: none;
+}
+
+.popular a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+}
+
+.popular-item-wrapper {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: var(--special-yellow);
+}
+
 /*---------- Services ----------*/
 
 .services-warranty-slide,
