@@ -198,6 +198,22 @@ img {
   display: none;
 }
 
+/*---------- Brands ----------*/
+
+.brands li{
+  list-style: none;
+}
+
+.brands img {
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
+.brands img:hover {
+  filter: none;
+  opacity: 1;
+}
+
 /*---------- Index columns ----------*/
 
 .index-columns h2 {
