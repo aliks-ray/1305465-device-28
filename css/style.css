@@ -301,6 +301,14 @@ img {
   background-color: var(--special-yellow);
 }
 
+.popular-item-wrapper:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.popular-item-wrapper:active img{
+  opacity: 0.3;
+}
+
 /*---------- Services ----------*/
 
 .services-warranty-slide,
