@@ -205,6 +205,70 @@ img {
   display: none;
 }
 
+.main-slider li {
+  list-style: none;
+}
+
+.main-slider p {
+  line-height: 20px;
+}
+
+.main-slider-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.main-slider-button {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 40px;
+  z-index: 1;
+  text-align: center;
+  vertical-align: center;
+  color: var(--basic-black);
+}
+
+.main-slider-button:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 8px;
+  padding: 0;
+  margin-top: -14px;
+  background-color: var(--special-yellow-dark);
+}
+
+.main-slider-button:hover:before {
+  height: 100%;
+  top: 0;
+  margin-top: -9px;
+}
+
+.main-slider-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-slider-characteristics {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.main-slider-description {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
 /*---------- Popular ----------*/
 .popular li {
   list-style: none;
