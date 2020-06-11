@@ -202,17 +202,52 @@ img {
 /*---------- Buttons ----------*/
 
 .button {
+  position: relative;
+  display: inline-block;
   height: 40px;
+  line-height: 40px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
   background-color: transparent;
+  z-index: 2;
   border: none;
   outline: none;
 }
+
+.button span {
+  position: relative;
+  line-height: 40px;
+  z-index: 2;
+}
+
+.button:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 8px;
+  padding: 0;
+  margin: 0;
+  transform: translateY(-50%);
+  background-color: var(--special-yellow-dark);
+}
+
+.button:hover:before {
+  height: 100%;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*---------- Main slider ----------*/
 
 .main-slider-slide2,
@@ -236,37 +271,7 @@ img {
 }
 
 .main-slider-button {
-  position: relative;
-  display: block;
   width: 220px;
-  height: 40px;
-  z-index: 1;
-  text-align: center;
-  vertical-align: center;
-  color: var(--basic-black);
-}
-
-.main-slider-button:before {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 8px;
-  padding: 0;
-  margin-top: -14px;
-  background-color: var(--special-yellow-dark);
-}
-
-.main-slider-button:hover:before {
-  height: 100%;
-  top: 0;
-  margin-top: -9px;
-}
-
-.main-slider-button:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-slider-characteristics {
@@ -331,32 +336,7 @@ img {
 }
 
 .services-button {
-  position: relative;
-  display: inline-block;
   width: 160px;
-}
-
-.services-button span {
-  position: relative;
-  z-index: 2;
-}
-
-.services-button:before {
-  position: absolute;
-  content: "";
-  z-index: 1;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 8px;
-  padding: 0;
-  margin: 0;
-  transform: translateY(-50%);
-  background-color: var(--special-yellow-dark);
-}
-
-.services-button:hover:before {
-  height: 100%;
 }
 
 .active-services-button {
@@ -420,40 +400,7 @@ img {
 
 .button-about,
 .button-contacts {
-  position: relative;
-  display: inline-block;
   width: 260px;
-}
-
-.button-about:before,
-.button-contacts:before {
-  position: absolute;
-  content: "";
-  z-index: 1;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 8px;
-  margin-top: -14px;
-  background-color: var(--special-yellow-dark);
-}
-
-.button-about span,
-.button-contacts span {
-  position: relative;
-  z-index: 2;
-}
-
-.button-about:hover:before,
-.button-contacts:hover:before {
-  height: 100%;
-  top: 0;
-  margin-top: -9px;
-}
-
-.button-about:active,
-.button-contacts:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 /*---------- Footer ----------*/
@@ -573,39 +520,6 @@ img {
 .filter-submit-button,
 .button-to-basket {
   width: 200px;
-  position: relative;
-  display: inline-block;
-}
-
-.filter-submit-button:before,
-.button-to-basket:before {
-  position: absolute;
-  content: "";
-  z-index: 1;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 8px;
-  margin-top: -4px;
-  background-color: var(--special-yellow-dark);
-}
-
-.filter-submit-button span,
-.button-to-basket span {
-  position: relative;
-  z-index: 2;
-}
-
-.filter-submit-button:hover:before,
-.button-to-basket:hover:before {
-  height: 100%;
-  top: 0;
-  margin-top: 0;
-}
-
-.filter-submit-button:active,
-.button-to-basket:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-title,
@@ -704,16 +618,6 @@ img {
   opacity: 0.7;
 }
 
-.button-to-basket {
-  border: none;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
 .button-compare {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
@@ -722,6 +626,7 @@ img {
   opacity: 0.5;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .button-compare:hover {
