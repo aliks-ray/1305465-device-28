@@ -309,7 +309,7 @@ img {
   background-color: var(--special-yellow-dark);
 }
 
-.popular-item-wrapper:active img{
+.popular-item-wrapper:active img {
   opacity: 0.3;
 }
 
@@ -373,7 +373,7 @@ img {
 
 /*---------- Brands ----------*/
 
-.brands li{
+.brands li {
   list-style: none;
 }
 
@@ -782,6 +782,6 @@ img {
   opacity: 0.3;
 }
 
-.pagination-1 {
+.pagination-active {
   opacity: 1;
 }
