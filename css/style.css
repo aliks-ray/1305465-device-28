@@ -86,7 +86,30 @@ img {
   clip: rect(0 0 0 0)
 }
 
+.container {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.page li {
+    list-style: none;
+}
+
 /*---------- INDEX PAGE ----------*/
+
+/*---------- Grid ----------*/
+
+.page {
+  height: 100%;
+}
+
+.page-body{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
 /*---------- Header ----------*/
 
@@ -103,14 +126,23 @@ img {
 }
 
 .main-navigation-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
   width: 1160px;
   min-height: 186px;
   background-color: var(--special-yellow);
 }
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 20px;
+  margin-right: 60px;
+  width: 1040px;
   list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -120,12 +152,23 @@ img {
   text-transform: uppercase;
 }
 
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
 .catalog-link {
   letter-spacing: 0.1em;
 }
 
 .site-navigation-catalog {
   display: none;
+}
+
+.logo {
+  margin-left: 60px;
 }
 
 .logo:hover,
@@ -148,6 +191,7 @@ img {
 /*----- Search -----*/
 
 .search-form {
+  margin-left: 100px;
   font-size: 0;
 }
 
@@ -326,7 +370,7 @@ img {
 }
 
 .services {
-  min-width: 1440px;
+  width: 100%;
   min-height: 288px;
   background-color: var(--basic-grey-light);
 }
@@ -406,7 +450,7 @@ img {
 /*---------- Footer ----------*/
 
 .footer-container {
-  min-width: 1440px;
+  width: 100%;
   min-height: 324px;
   background-color: var(--basic-dark);
   color: var(--basic-white);
@@ -430,7 +474,7 @@ img {
 }
 
 .footer-services,
-.socials {
+.socials-list {
   list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -440,7 +484,7 @@ img {
   text-transform: uppercase;
 }
 
-.socials a {
+.socials-list a {
   display: block;
   width: 32px;
   height: 32px;
@@ -448,11 +492,11 @@ img {
   background-repeat: no-repeat;
 }
 
-.socials a:hover {
+.socials-list a:hover {
   opacity: 0.6;
 }
 
-.socials a:active {
+.socials-list a:active {
   opacity: 0.1;
 }
 
