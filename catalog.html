@@ -63,7 +63,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="catalog-page">
     <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li>
@@ -162,14 +162,16 @@
 
     <section class="catalog-list">
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
-      <ul>
+      <ul class="catalog-items">
         <li class="catalog-item">
           <p>
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <button class="button button-to-basket" type="button">
-              <span>В корзину</span>
-            </button>
-            <button class="button-compare" type="button">Добавить к сравнению</button>
+            <div class="item-buttons">
+              <button class="button button-to-basket" type="button">
+                <span>В корзину</span>
+              </button>
+              <button class="button-compare" type="button">Добавить к сравнению</button>
+            </div>
           </p>
           <a href="">
             <h3>Любительская селфи-палка</h3>
@@ -179,10 +181,12 @@
         <li class="catalog-item">
           <p>
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <button class="button button-to-basket" type="button">
-              <span>В корзину</span>
-            </button>
-            <button class="button-compare" type="button">Добавить к сравнению</button>
+            <div class="item-buttons">
+              <button class="button button-to-basket" type="button">
+                <span>В корзину</span>
+              </button>
+              <button class="button-compare" type="button">Добавить к сравнению</button>
+            </div>
           </p>
           <a href="">
             <h3>Профессиональная селфи-палка</h3>
@@ -192,10 +196,12 @@
         <li class="catalog-item">
           <p>
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <button class="button button-to-basket" type="button">
-              <span>В корзину</span>
-            </button>
-            <button class="button-compare" type="button">Добавить к сравнению</button>
+            <div class="item-buttons">
+              <button class="button button-to-basket" type="button">
+                <span>В корзину</span>
+              </button>
+              <button class="button-compare" type="button">Добавить к сравнению</button>
+            </div>
           </p>
           <a href="">
             <h3>Непотопляемая селфи-палка</h3>
@@ -205,10 +211,12 @@
         <li class="catalog-item">
           <p>
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <button class="button button-to-basket" type="button">
-              <span>В корзину</span>
-            </button>
-            <button class="button-compare" type="button">Добавить к сравнению</button>
+            <div class="item-buttons">
+              <button class="button button-to-basket" type="button">
+                <span>В корзину</span>
+              </button>
+              <button class="button-compare" type="button">Добавить к сравнению</button>
+            </div>
           </p>
           <a href="">
             <h3>Селфи-палка «Следуй за мной»</h3>
@@ -218,10 +226,12 @@
       </ul>
       <div class="pagination-container">
         <button class="pagination-buttons" type="button" disabled>Назад</button>
-        <a class="pagination-pages pagination-active" href="">1</a>
-        <a class="pagination-pages" href="">2</a>
-        <a class="pagination-pages" href="">3</a>
-        <button class="pagination-buttons" type="button">Вперед</button>
+         <div class="pagination-pages">
+          <a class="pagination-page pagination-active" href="">1</a>
+          <a class="pagination-page" href="">2</a>
+          <a class="pagination-page" href="">3</a>
+        </div>
+      <button class="pagination-buttons" type="button">Вперед</button>
     </div>
     </section>
   </main>
