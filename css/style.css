@@ -433,6 +433,14 @@ img {
   color: var(--basic-black);
 }
 
+.index-columns {
+  display: grid;
+  grid-template-columns: 473px 560px;
+  column-gap: 126px;
+  justify-content: center;
+}
+
+
 /*---------- About us ----------*/
 
 .about-us li {
@@ -445,6 +453,16 @@ img {
 .button-about,
 .button-contacts {
   width: 260px;
+}
+
+.about-us {
+  width: 473px;
+}
+
+/*---------- Contacts ----------*/
+
+.contacts {
+  width: 473px;
 }
 
 /*---------- Footer ----------*/
