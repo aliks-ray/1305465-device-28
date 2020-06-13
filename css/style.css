@@ -813,14 +813,11 @@ header .logo {
 
 .catalog-item {
   position: relative;
+  margin-right: 40px;
 }
 
 .catalog-item img:hover {
   opacity: 0.7;
-}
-
-.catalog-item:nth-child(2n) {
-  margin-left: 40px;
 }
 
 .button-compare {
