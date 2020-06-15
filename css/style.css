@@ -302,23 +302,54 @@ header .logo {
   display: none;
 }
 
-.main-slider li {
+.main-slider-slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 1160px;
+  height: 506px;
+  margin-bottom: 116px;
+}
+
+.main-slider {
+  position: relative;
+  padding: 0;
+}
+
+.main-slider ul {
+  display: flex;
+  position: absolute;
   list-style: none;
+  z-index: 2
+}
+
+.main-slider img {
+  grid-row: 1/5;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2
 }
 
 .main-slider p {
+  grid-column-start: 2;
   line-height: 20px;
 }
 
-.main-slider-title {
+.main-slider .main-slider-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
+  z-index: 2
 }
 
 .main-slider-button {
+  grid-column-start: 2;
   width: 220px;
+}
+
+.item-characteristics {
+  grid-column-start: 2;
 }
 
 .main-slider-characteristics {
@@ -335,6 +366,18 @@ header .logo {
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
+}
+
+.main-slider:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  width: 1160px;
+  height: 94px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--special-yellow);
 }
 /*---------- Popular ----------*/
 
