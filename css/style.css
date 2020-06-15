@@ -337,11 +337,21 @@ header .logo {
   letter-spacing: 0.1em;
 }
 /*---------- Popular ----------*/
+
+.popular-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
 .popular li {
   list-style: none;
 }
 
 .popular a {
+  display: block;
+  width: 160px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -350,11 +360,28 @@ header .logo {
   color: var(--basic-black);
 }
 
+.popular a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popular .popular-item-fitness {
+  letter-spacing: normal;
+}
+
 .popular-item-wrapper {
   display: block;
+  position: relative;
   width: 160px;
   height: 160px;
   background-color: var(--special-yellow);
+  margin-bottom: 38px;
+}
+
+.popular-item-wrapper img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .popular-item-wrapper:hover {
