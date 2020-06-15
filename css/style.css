@@ -400,29 +400,69 @@ header .logo {
 }
 
 .services {
+  position: relative;
+  margin-top: 160px;
   width: 100%;
-  min-height: 288px;
+  height: 288px;
   background-color: var(--basic-grey-light);
 }
 
-.services p {
+.services-slider {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-slider h3 {
+  margin-top: -29px;
+  margin-bottom: 40px;
+  margin-left: 116px;
+}
+
+.services-slider p {
+  width: 495px;
   letter-spacing: 0.1em;
+  margin-left: 116px;
+}
+
+.services-slider img {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -29px;
+}
+
+.services-buttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: -20px;
 }
 
 .services-button {
   width: 160px;
+  margin-bottom: 30px;
 }
 
 .active-services-button {
   width: 280px;
   text-align: left;
   color: var(--special-yellow);
+  margin-bottom: 40px;
 }
 
 .active-services-button:before {
   width: 100%;
   height: 100%;
   background-color: var(--basic-black);
+}
+
+.active-slide {
+  grid-column: 2/3;
 }
 
 /*---------- Brands ----------*/
