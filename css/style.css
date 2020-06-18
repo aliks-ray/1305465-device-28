@@ -592,10 +592,8 @@ img {
 }
 
 .index-columns {
-  display: grid;
-  grid-template-columns: 473px 560px;
-  column-gap: 127px;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 
