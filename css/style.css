@@ -635,16 +635,13 @@ img {
   color: var(--basic-white);
 }
 
-.footer-wrapper {
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .footer-row {
   display: flex;
-  margin-right: 63px;
   justify-content: space-between;
+}
+
+.device-logo-footer {
+  margin-top: 64px;
 }
 
 .footer-menu {
@@ -672,21 +669,22 @@ img {
 }
 
 .adress {
-  margin-top: 40px;
+  margin-top: 73px;
   width: 220px;
 }
 
 .site-navigation-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  align-self: center;
+  align-content: center;
+  margin-left: 156px;
   padding-left: 0;
+  margin-top: 72px;
 }
 
 .site-navigation-footer li {
-  margin-right: 36px;
+  margin-right: 35px;
 }
 
 .site-navigation-footer li:last-child {
@@ -695,8 +693,8 @@ img {
 
 .tel {
   display: block;
-  text-align: right;
   margin-left: auto;
+  margin-top: 73px;
 }
 
 .footer-services,
@@ -721,15 +719,20 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0;
+  margin-top: 67px;
+  margin-bottom: 65px;
 }
 
 .socials-list a {
   display: block;
-  padding-right: 20px;
   width: 32px;
   height: 32px;
   opacity: 0.3;
   background-repeat: no-repeat;
+}
+
+.social-item {
+  padding-right: 20px;
 }
 
 .socials-list li:last-child {
@@ -756,13 +759,13 @@ img {
   background-image: url("../img/twitter.svg");
 }
 
-.logo-academy {
+.academy-logo {
+  position: relative;
   justify-content: flex-end;
   align-self: flex-end;
   margin-right: 0;
-  margin-left: auto;
+  margin-bottom: 64px;
 }
-
 
 /*---------- Popups ----------*/
 
