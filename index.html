@@ -9,8 +9,8 @@
 
 <body class="page-body">
   <header class="container">
-    <a>
-      <img class="logo device-logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
+    <a class="logo device-logo-header">
+      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
     </a>
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
@@ -18,15 +18,21 @@
           <input class="search-field" type="search" placeholder="Поиск по сайту" autofocus>
           <button class="search-button" type="submit">Найти</button>
         </form>
-        <div class="nav-links">
-          <a href="">Войти</a>
-          <a href="">Сравнить</a>
-          <a href="">Корзина</a>
-        </div>
-        <ul class="site-navigation">
+        <ul class="nav-links">
+          <li class="nav-link nav-link-login">
+            <a href="">Войти</a>
+          </li>
+          <li class="nav-link nav-link-compare">
+            <a href="">Сравнить</a>
+          </li>
+          <li class="nav-link nav-link-basket">
+            <a href="">Корзина</a>
           <li>
+        </ul>
+        <ul class="site-navigation site-navigation-header">
+          <li class="site-navigation-catalog">
             <a href="catalog.html" class="catalog-link">Каталог товаров</a>
-            <ul class="site-navigation-catalog">
+            <ul class="site-navigation-catalog-items">
               <li>
                 <a href="">Виртуальная реальность</a>
               </li>
@@ -47,13 +53,13 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="site-navigation-item site-navigation-delivery">
             <a href="">Доставка</a>
           </li>
-          <li>
+          <li class="site-navigation-item site-navigation-warranty">
             <a href="">Гарантия</a>
           </li>
-          <li>
+          <li class="site-navigation-item site-navigation-contacts">
             <a href="">Контакты</a>
           </li>
         </ul>
@@ -275,8 +281,8 @@
   <footer class="footer-container container">
     <div class="footer-wrapper">
       <div class="footer-row">
-        <a>
-          <img class="logo device-logo" src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
+        <a class="logo device-logo-footer">
+          <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device»">
         </a>
         <div class="footer-menu">
           <a href="">Войти</a>
@@ -286,7 +292,7 @@
       </div>
       <div class="footer-row">
         <p class="adress">г.Москва ул. Строителей, 15</p>
-        <ul class="footer-services site-navigation">
+        <ul class="site-navigation site-navigation-footer">
           <li>
             <a href="">Доставка</a>
           </li>
