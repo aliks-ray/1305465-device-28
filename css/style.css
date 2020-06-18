@@ -92,8 +92,8 @@ img {
   margin: 0 auto;
 }
 
-.page li {
-  list-style: none;
+.clear-list-style {
+  list-style-type: none;
 }
 
 /*---------- INDEX PAGE ----------*/
@@ -137,7 +137,6 @@ img {
 }
 
 .site-navigation {
-  list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -356,7 +355,6 @@ img {
 .main-slider ul {
   display: flex;
   position: absolute;
-  list-style: none;
   z-index: 2
 }
 
@@ -423,10 +421,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-}
-
-.popular li {
-  list-style: none;
 }
 
 .popular a {
@@ -555,10 +549,6 @@ img {
   margin-bottom: 90px;
 }
 
-.brands li {
-  list-style: none;
-}
-
 .brands img {
   filter: grayscale(100%);
   opacity: 0.3;
@@ -600,7 +590,6 @@ img {
 /*---------- About us ----------*/
 
 .about-us li {
-  list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -699,7 +688,6 @@ img {
 
 .footer-services,
 .socials-list {
-  list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -799,7 +787,6 @@ img {
 }
 
 .breadcrumbs li {
-  list-style: none;
   margin-right: 40px;
   opacity: 0.3;
 }
@@ -864,11 +851,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-.filter-block li,
-.sorting li {
-  list-style: none;
 }
 
 .sorting-container {
@@ -936,10 +918,6 @@ img {
   margin-left: 72px;
   margin-top: 70px;
   padding-left: 0;
-}
-
-.catalog-list li {
-  list-style: none;
 }
 
 .catalog-list h3 {
