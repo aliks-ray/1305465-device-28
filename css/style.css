@@ -206,8 +206,9 @@ img {
 }
 
 .device-logo-header {
+  position: relative;
   padding-left: 60px;
-  margin-bottom: -14px;
+  top: 14px;
 }
 
 .logo:hover,
@@ -481,22 +482,17 @@ img {
 .services {
   position: relative;
   margin-top: 160px;
-  width: 100%;
-  height: 288px;
+  padding-bottom: 70px;
   background-color: var(--basic-grey-light);
 }
 
 .services-slider {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services-slider h3 {
-  margin-top: -29px;
   margin-bottom: 40px;
   margin-left: 116px;
 }
@@ -511,27 +507,25 @@ img {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 0;
-  margin-top: -29px;
+  top: 50px;
 }
 
 .services-buttons {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  width: 277px;
   top: -20px;
 }
 
 .services-button {
+  display: block;
   width: 160px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .active-services-button {
   width: 280px;
   text-align: left;
   color: var(--special-yellow);
-  margin-bottom: 40px;
 }
 
 .active-services-button:before {
@@ -540,8 +534,14 @@ img {
   background-color: var(--basic-black);
 }
 
-.active-slide {
-  grid-column: 2/3;
+.active-services-button-text {
+  padding-left: 19px;
+}
+
+.active-services-slide {
+  position: relative;
+  top: -80px;
+  flex-grow: 1;
 }
 
 /*---------- Brands ----------*/
