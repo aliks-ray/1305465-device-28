@@ -781,11 +781,18 @@ img {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
+  padding-left: 60px;
 }
 
 .breadcrumbs {
   display: flex;
   margin-right: auto;
+  padding-left: 60px;
+  margin-bottom: 50px;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
 }
 
 .breadcrumbs li {
@@ -804,7 +811,7 @@ img {
 /*---------- Filter & sorting ----------*/
 
 .catalog-header {
-  background: linear-gradient(to right, #DCDCDC 30%, #E5E5E5 30%)
+  background: linear-gradient(to right, #DCDCDC 50%, #E5E5E5 50%)
 }
 
 .catalog-header .container {
@@ -821,16 +828,19 @@ img {
   margin: 0;
 }
 
-.catalog-filter {
+.filter-title {
+  display: inline-block;
   width: 328px;
   background-color: #DCDCDC;
   padding-top: 25px;
   padding-bottom: 25px;
+  align-self: center;
 }
 
 .catalog-sorting {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 972px;
   background-color: #E5E5E5;
   padding-top: 25px;
@@ -844,6 +854,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-left: 74px;
 }
 
 .sorting-container {
@@ -859,6 +870,7 @@ img {
   line-height: 19px;
   color: var(--basic-black);
   opacity: 0.3;
+  margin-right: 30px;
 }
 
 .sorting-option:hover {
@@ -876,6 +888,7 @@ img {
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
+  margin-left: 219px;
 }
 
 .sorting-more-less {
@@ -897,7 +910,7 @@ img {
 }
 
 .catalog-main {
-  background: linear-gradient(to right, var(--basic-grey-light) 30%, var(--basic-white) 30%)
+  background: linear-gradient(to right, var(--basic-grey-light) 50%, var(--basic-white) 50%)
 }
 
 .catalog-main .container {
