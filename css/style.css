@@ -119,6 +119,7 @@ img {
 /*----- Main navigation -----*/
 
 .main-navigation {
+  position: relative;
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black);
@@ -162,45 +163,179 @@ img {
   flex-wrap: wrap;
   align-content: center;
   width: 500px;
-  margin-left: 100px;
   margin-right: 60px;
   padding: 0;
 }
 
 .nav-link-login {
+  position: relative;
   margin-right: auto;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+.nav-link-login:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 19px;
 }
 
 .nav-link-profile {
-  margin-right: 20px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.nav-link-profile:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 19px;
+}
+
+.nav-link-logout {
+  position: relative;
+  margin-right: auto;
+  padding-left: 20px;
 }
 
 .nav-link-compare {
-  margin-right: 63px;
+  position: relative;
+  padding-left: 40px;
+  margin-right: 25px;
+}
+
+.nav-link-compare:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 19px;
+}
+
+.nav-link-basket {
+  position: relative;
+  padding-left: 40px;
+}
+
+.nav-link-basket:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 19px;
 }
 
 .site-navigation-catalog {
+  position: relative;
   margin-right: auto;
 }
 
+.site-navigation-catalog:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  top: 2px;
+  left: 210px;
+}
+
+.nav-link-login:hover:before,
+.nav-link-profile:hover:before,
+.nav-link-compare:hover:before,
+.nav-link-basket:hover:before,
+.site-navigation-catalog:hover:before {
+  opacity: 0.6;
+}
+
+.nav-link-login:active:before,
+.nav-link-profile:active:before,
+.nav-link-compare:active:before,
+.nav-link-basket:active:before,
+.site-navigation-catalog:active:before {
+  opacity: 0.3;
+}
+
 .site-navigation-delivery {
-  margin-right: 38px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .site-navigation-warranty {
-  margin-right: 111px;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.site-navigation-contacts {
+  padding-left: 75px;
 }
 
 .catalog-link {
   letter-spacing: 0.1em;
 }
 
+.site-navigation-catalog-container {
+  position: absolute;
+  display: block;
+  background-color: var(--special-yellow);
+  width: 1040px;
+  height: 146px;
+  z-index: 10;
+  padding-left: 60px;
+  padding-right: 60px;
+  left: -60px;
+}
+
 .site-navigation-catalog-items {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.site-navigation-catalog-column {
+  margin-right: 61px;
+  margin-bottom: 46px;
+  margin-top: 12px;
+}
+
+.site-navigation-catalog-items li {
+  margin-top: 20px;
+}
+
+.site-navigation-catalog-items li:first-child {
+  margin-top: 0;
 }
 
 .logo {
   display: block;
+  z-index: 3;
 }
 
 .logo img {
@@ -230,11 +365,27 @@ img {
   opacity: 0.3;
 }
 
+.site-navigation-catalog-container {
+  display: none;
+}
+
 /*----- Search -----*/
 
 .search-form {
+  position: relative;
   margin-left: 60px;
   font-size: 0;
+}
+
+.search-form:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  bottom: 16px;
 }
 
 .search-button {
@@ -278,6 +429,7 @@ img {
   opacity: 0.3;
   outline: none;
   vertical-align: bottom;
+  padding-left: 40px;
 }
 
 .search-field:focus {
@@ -416,7 +568,7 @@ img {
   z-index: 1;
   top: 0;
   width: 1160px;
-  height: 94px;
+  height: 114px;
   padding: 0;
   margin: 0;
   background-color: var(--special-yellow);
