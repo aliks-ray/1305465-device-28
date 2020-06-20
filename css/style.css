@@ -749,6 +749,7 @@ img {
 .index-columns {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 86px;
 }
 
 
@@ -768,16 +769,49 @@ img {
 .button-about,
 .button-contacts {
   width: 260px;
-  margin-bottom: 86px;
 }
 
 .about-us {
   width: 473px;
 }
 
+.delivery-list {
+  margin-bottom: 84px;
+}
+
+.delivery-list li {
+  position: relative;
+  padding-left: 34px;
+}
+
+.delivery-list li:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--basic-grey-light);
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: 0;
+  top: 10px;
+}
+
 .about-us-title,
 .contacts-title {
+  position: relative;
   margin-bottom: 50px;
+}
+
+.about-us-title:before,
+.contacts-title:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: var(--basic-dark);
+  top: -50px;
 }
 
 .about-us p,
@@ -793,7 +827,7 @@ img {
 
 .small-map {
   display: block;
-  margin-bottom: 85px;
+  margin-bottom: 92px;
 }
 
 .small-map img {
@@ -945,6 +979,94 @@ img {
 }
 
 /*---------- Popups ----------*/
+
+.popup-map {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  width: 960px;
+  height: 560px;
+  background-color: var(--basic-white);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+.popup-map-iframe {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+}
+
+.popup-map-iframe iframe {
+  border: none;
+}
+
+.popup-map-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.popup-map-img img {
+  height: 560px;
+}
+
+.modal-map-wrapper {
+  position: relative;
+}
+
+.modal-map-close {
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 22px;
+  right: 22px;
+  border: none;
+  background-color: var(--special-yellow-dark);
+  border-radius: 50%;
+  box-sizing: border-box;
+  opacity: 0.5;
+  z-index: 3;
+  outline: none;
+}
+
+.modal-map-close:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background-color: var(--basic-white);
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0.7;
+}
+
+.modal-map-close:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background-color: var(--basic-white);
+  transform: translate(-50%, -50%) rotate(135deg);
+  opacity: 0.7;
+}
+
+.modal-map-close:hover {
+  opacity: 1;
+}
+
+.modal-map-close:active {
+  opacity: 0.3;
+}
 
 .popup-write-us,
 .popup-map {
