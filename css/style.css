@@ -336,11 +336,6 @@ img {
 
 /*---------- Main slider ----------*/
 
-.main-slider-slide2,
-.main-slider-slide3 {
-  display: none;
-}
-
 .main-slider-slide {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -426,6 +421,12 @@ img {
   margin: 0;
   background-color: var(--special-yellow);
 }
+
+.main-slider-slide2,
+.main-slider-slide3 {
+  display: none;
+}
+
 /*---------- Popular ----------*/
 
 .popular-items {
@@ -601,6 +602,11 @@ img {
 
 /*---------- About us ----------*/
 
+.about-us ul {
+  margin-top: 60px;
+  margin-bottom: 84px;
+}
+
 .about-us li {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -610,10 +616,21 @@ img {
 .button-about,
 .button-contacts {
   width: 260px;
+  margin-bottom: 86px;
 }
 
 .about-us {
   width: 473px;
+}
+
+.about-us-title,
+.contacts-title {
+  margin-bottom: 50px;
+}
+
+.about-us p,
+.contacts p {
+  margin-bottom: 40px;
 }
 
 /*---------- Contacts ----------*/
@@ -622,6 +639,14 @@ img {
   width: 473px;
 }
 
+.small-map {
+  display: block;
+  margin-bottom: 85px;
+}
+
+.small-map img {
+  display: block;
+}
 /*---------- Footer ----------*/
 
 .footer-container {
