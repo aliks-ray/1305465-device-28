@@ -867,20 +867,94 @@ img {
  margin-top: 46px;
 }
 
-.footer-menu a {
-  margin-right: 63px;
+.nav-link-footer {
+  margin-right: 60px;
   opacity: 0.7;
 }
 
-.footer-menu a:last-child {
+.footer-menu li:last-child {
   margin-right: 0;
 }
 
-.footer-menu a:hover {
+.footer-menu li:hover {
   opacity: 1;
 }
 
-.footer-menu a:active {
+.footer-menu li:active {
+  opacity: 0.3;
+}
+
+.nav-link-login-footer,
+.nav-link-compare-footer,
+.nav-link-basket-footer,
+.nav-link-profile-footer {
+  position: relative;
+  padding-left: 25px;
+}
+
+.nav-link-profile-footer {
+  margin-right: 25px;
+}
+
+.nav-link-login-footer:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon-user-yellow.svg");
+  background-repeat: no-repeat;
+  top: 4px;
+  left: 0;
+}
+
+.nav-link-compare-footer:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon-chart-yellow.svg");
+  background-repeat: no-repeat;
+  top: 4px;
+  left: 0;
+}
+
+.nav-link-basket-footer:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon-cart-yellow.svg");
+  background-repeat: no-repeat;
+  top: 4px;
+  left: 0;
+}
+
+.nav-link-profile-footer:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon-user-special-yellow.svg");
+  background-repeat: no-repeat;
+  top: 4px;
+  left: 0;
+}
+
+.nav-link-login-footer:hover:before,
+.nav-link-compare-footer:hover:before,
+.nav-link-basket-footer:hover:before,
+.nav-link-profile-footer:hover:before {
+  opacity: 0.6;
+}
+
+.nav-link-login-footer:active:before,
+.nav-link-compare-footer:active:before,
+.nav-link-basket-footer:active:before,
+.nav-link-profile-footer:active:before {
   opacity: 0.3;
 }
 
@@ -922,11 +996,23 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
 .socials {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+}
+
+.socials:before {
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  content: "";
+  background-color: var(--special-yellow-dark);
+  left: -518px;
+  bottom: 78px;
 }
 
 .socials-list {
