@@ -1307,7 +1307,11 @@ img {
 }
 
 .breadcrumbs li {
-  margin-right: 40px;
+  position: relative;
+  padding-right: 40px;
+}
+
+.breadcrumbs a {
   opacity: 0.3;
 }
 
@@ -1317,6 +1321,22 @@ img {
 
 .breadcrumbs li:active {
   opacity: 0.1;
+}
+
+.breadcrumbs li:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
+  top: 12px;
+  right: 10px;
+}
+
+.breadcrumbs li:last-child:after {
+  display: none;
 }
 
 /*---------- Filter & sorting ----------*/
