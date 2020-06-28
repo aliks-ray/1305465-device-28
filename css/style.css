@@ -1446,6 +1446,7 @@ img {
   height: 18px;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
+  margin-left: 16px;
 }
 
 .sorting-less-more:hover,
@@ -1512,6 +1513,68 @@ img {
   background-color: var(--basic-black);
   top: 0;
   left: 0;
+}
+
+.filter-price {
+  margin-bottom: 10px;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 54%;
+  height: 2px;
+  background-color: var(--special-green);
+}
+
+.range-toggle {
+  position: absolute;
+  top: -12px;
+  width: 5px;
+  height: 5px;
+  background-color: #dbdbdb;
+  border: 10px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: -6px;
+}
+
+.range-toggle-max {
+  left: 54%;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-black);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.price-controls input {
+  text-align: left;
+  color: var(--basic-black);
+  max-width: 70px;
+  border: 0;
+  background: none;
 }
 
 .filter-option {
