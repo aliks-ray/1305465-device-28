@@ -486,14 +486,14 @@ img {
 .main-slider ul {
   display: flex;
   position: absolute;
-  z-index: 2
+  z-index: 0;
 }
 
 .main-slider img {
   grid-row: 1/5;
   margin-right: auto;
   margin-left: auto;
-  z-index: 2
+  z-index: 0;
 }
 
 .main-slider-text {
@@ -503,13 +503,49 @@ img {
 }
 
 .main-slider-title {
+  position: relative;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-  z-index: 2;
+  z-index: 0;
   margin-top: 60px;
   margin-bottom: 30px;
+}
+
+.main-slider-title:before {
+  position: absolute;
+  content: "";
+  top: -50px;
+  width: 100px;
+  height: 7px;
+  background-color: var(--basic-white);
+}
+
+.main-slider-title:after {
+  position: absolute;
+  font-family: inherit;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  z-index: -1;
+  top: -90px;
+  right: 53px;
+  width: 182px;
+  height: 170px;
+  color: var(--basic-white);
+}
+
+.main-slider-slide1 .main-slider-title:after {
+  content: "01";
+}
+
+.main-slider-slide2 .main-slider-title:after {
+  content: "02";
+}
+
+.main-slider-slide3 .main-slider-title:after {
+  content: "03";
 }
 
 .main-slider-button {
@@ -535,7 +571,6 @@ img {
     padding-bottom: 15px;
 }
 
-
 .main-slider-description {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
@@ -547,13 +582,48 @@ img {
 .main-slider:before {
   position: absolute;
   content: "";
-  z-index: 1;
+  z-index: 0;
   top: 0;
   width: 1200px;
   height: 114px;
   padding: 0;
   margin: 0;
   background-color: var(--special-yellow);
+}
+
+.main-slider-controls {
+  position: absolute;
+  top: 330px;
+  right: 88px;
+}
+
+.main-slider-control {
+  position: relative;
+  padding-left: 30px;
+}
+
+.main-slider-control input + label:before{
+  position: relative;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--basic-black);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.main-slider-control input:checked + label:after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--basic-black);
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: 33px;
+  bottom: 3px;
 }
 
 .main-slider-slide2,
@@ -1458,8 +1528,8 @@ img {
 }
 
 .filter-input-checkbox:checked + label:after {
-  content: "";
   position: absolute;
+  content: "";
   width: 14px;
   height: 11px;
   background-image: url("../img/checkbox-check.svg");
