@@ -727,6 +727,16 @@ img {
   top: -20px;
 }
 
+.services-buttons:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 320px;
+  background-color: var(--basic-black);
+  top: -71px;
+  left: 277px;
+}
+
 .services-button {
   display: block;
   width: 160px;
