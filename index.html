@@ -34,8 +34,8 @@
             <li class="site-navigation-catalog">
               <a href="catalog.html" class="catalog-link">Каталог товаров</a>
               <div class="site-navigation-catalog-container container">
-                <ul class="clear-list-style site-navigation-catalog-items">
-                  <div class="site-navigation-catalog-column">
+                <div class="site-navigation-catalog-items">
+                  <ul class="clear-list-style site-navigation-catalog-column">
                     <li>
                       <a href="">Виртуальная реальность</a>
                     </li>
@@ -45,21 +45,21 @@
                     <li>
                       <a href="">Экшн-камеры</a>
                     </li>
-                  </div>
-                  <div class="site-navigation-catalog-column">
+                  </ul>
+                  <ul class="clear-list-style site-navigation-catalog-column">
                     <li>
                       <a href="">Фитнес-браслеты</a>
                     </li>
                     <li>
                       <a href="">Умные часы</a>
                     </li>
-                  </div>
-                  <div class="site-navigation-catalog-column">
+                  </ul>
+                  <ul class="clear-list-style site-navigation-catalog-column">
                     <li>
                       <a href="">Квадрокоптеры</a>
                     </li>
-                  </div>
-                </ul>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="site-navigation-item site-navigation-delivery">
@@ -84,15 +84,15 @@
       <ul class="clear-list-style main-slider-controls">
         <li class="main-slider-control">
           <input class="visually-hidden" id="main-slider-control-1" type="radio" name="slides" value="slide1" checked>
-          <label for="main-slider-control-1">
+          <label for="main-slider-control-1"></label>
         </li>
         <li class="main-slider-control">
           <input class="visually-hidden" id="main-slider-control-2" type="radio" name="slides" value="slide1">
-          <label for="main-slider-control-2">
+          <label for="main-slider-control-2"></label>
         </li>
         <li class="main-slider-control">
           <input class="visually-hidden" id="main-slider-control-3" type="radio" name="slides" value="slide1">
-          <label for="main-slider-control-3">
+          <label for="main-slider-control-3"></label>
         </li>
       </ul>
       <div class="main-slider-slide main-slider-slide1 active-slide">
@@ -341,22 +341,22 @@
   </footer>
 
   <section class="popup-feedback">
-    <h1 class="visually-hidden">Напишите нам</h1>
+    <h2 class="visually-hidden">Напишите нам</h2>
     <div class="modal-feedback-wrapper">
       <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
         <div class="input-wrapper input-name">
           <label for="user-name">Ваше имя:
-            <input class="popup-input" type="text" name="user-name" placeholder="Имя Фамилия">
+            <input class="popup-input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
           </label>
         </div>
         <div class="input-wrapper input-email">
           <label for="user-email">Ваш e-mail:
-            <input class="popup-input" type="email" name="user-email" placeholder="email@example.com">
+            <input class="popup-input" type="email" name="user-email" id="user-email" placeholder="email@example.com">
           </label>
         </div>
         <div class="input-wrapper input-message">
           <label for="user-message">Текст письма:
-            <textarea class="popup-input" name="user-message" placeholder="В свободной форме"></textarea>
+            <textarea class="popup-input" name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
           </label>
         </div>
         <button class="button button-modal" type="submit">
@@ -371,7 +371,7 @@
 
   <section class="popup-map">
     <div class="modal-map-wrapper">
-      <h1 class="visually-hidden">Как до нас добраться</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
         <p class="popup-map-iframe">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1592679242987!5m2!1sru!2sru"
           width="960" height="560" allowfullscreen="">

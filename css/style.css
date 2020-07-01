@@ -775,7 +775,7 @@ img {
   justify-content: space-between;
   padding: 0;
   margin-top: 90px;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .brands img {
@@ -841,11 +841,13 @@ img {
 
 .delivery-list {
   margin-bottom: 84px;
+  margin-top: 60px;
 }
 
 .delivery-list li {
   position: relative;
   padding-left: 34px;
+  margin-bottom: 20px;
 }
 
 .delivery-list li:before {
@@ -886,12 +888,12 @@ img {
 /*---------- Contacts ----------*/
 
 .contacts {
-  width: 473px;
+  width: 560px;
 }
 
 .small-map {
   display: block;
-  margin-bottom: 92px;
+  margin-bottom: 100px;
 }
 
 .small-map img {
