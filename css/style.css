@@ -250,12 +250,12 @@ img {
 }
 
 .nav-link:hover:before,
-.site-navigation-catalog:hover:before {
+.catalog-link:hover:before {
   opacity: 0.6;
 }
 
 .nav-link:active:before,
-.site-navigation-catalog:active:before {
+.catalog-link:active:before {
   opacity: 0.3;
 }
 
@@ -330,15 +330,17 @@ img {
 }
 
 .logo:hover,
-.main-navigation li:hover,
-.site-navigation li:hover,
+.nav-link:hover,
+.site-navigation-catalog-item:hover,
+.site-navigation-item:hover,
 .search-field:hover {
   opacity: 0.6
 }
 
 .logo:active,
-.main-navigation li:active,
-.site-navigation li:active {
+.nav-link:active,
+.site-navigation-catalog-item:active,
+.site-navigation-item:active {
   opacity: 0.3
 }
 
@@ -348,6 +350,10 @@ img {
 
 .site-navigation-catalog-container {
   display: none;
+}
+
+.site-navigation-catalog:hover .site-navigation-catalog-container {
+  display: block;
 }
 
 /*----- Search -----*/
