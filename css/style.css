@@ -1366,6 +1366,44 @@ img {
   opacity: 0.3;
 }
 
+/*---------- ANIMATION ----------*/
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -150%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-50%, -50%)  translateX(-20px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-50%, -50%)  translateX(20px);
+  }
+}
+
+.popup-error {
+  animation: shake 0.5s;
+}
+
 /*---------- CATALOG PAGE ----------*/
 
 .breadcrumbs-wrapper {
