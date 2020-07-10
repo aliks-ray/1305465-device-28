@@ -11,6 +11,8 @@
   --special-yellow: #F7E296;
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
+
+  --modal-error-red: #F6DADA;
 }
 
 /*---------- Fonts ----------*/
@@ -1271,6 +1273,10 @@ img {
   display: block;
 }
 
+.popup-invalid {
+  background-color: var(--modal-error-red);
+}
+
 /*---------- Map ----------*/
 
 .popup-map {
@@ -1364,6 +1370,10 @@ img {
 .modal-map-close:active,
 .modal-feedback-close:active {
   opacity: 0.3;
+}
+
+.popup-map-show{
+  display: block;
 }
 
 /*---------- ANIMATION ----------*/

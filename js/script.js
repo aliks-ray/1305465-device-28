@@ -55,3 +55,26 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+var mapLink = document.querySelector(".small-map");
+var mapPopup = document.querySelector(".popup-map");
+var mapClose = document.querySelector(".modal-map-close");
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("popup-map-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("popup-map-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("popup-map-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("popup-map-show");
+    }
+  }
+});
