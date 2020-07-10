@@ -22,8 +22,12 @@ feedbackLink.addEventListener("click", function (evt) {
   feedbackPopup.classList.add("popup-feedback-show");
   feedbackLogin.focus();
 
-  if (storageLogin) {
+  if (storageLogin && storageEmail) {
   feedbackLogin.value = storageLogin;
+  feedbackEmail.value = storageEmail;
+  feedbackMessage.focus();
+} else {
+  feedbackLogin.focus();
 }
 
 });
@@ -43,6 +47,30 @@ feedbackForm.addEventListener("submit", function (evt) {
   } else {
     localStorage.setItem("login", feedbackLogin.value);
     localStorage.setItem("email", feedbackEmail.value);
+  }
+});
+
+feedbackLogin.addEventListener("input", function (evt) {
+  if (feedbackLogin.validity.valid) {
+    feedbackLogin.classList.remove("popup-invalid");
+    feedbackLogin.offsetWidth = feedbackLogin.offsetWidth;
+    feedbackLogin.classList.add("popup-invalid");
+  }
+});
+
+feedbackEmail.addEventListener("input", function (evt) {
+  if (feedbackEmail.validity.valid) {
+    feedbackEmail.classList.remove("popup-invalid");
+    feedbackEmail.offsetWidth = feedbackEmail.offsetWidth;
+    feedbackEmail.classList.add("popup-invalid");
+  }
+});
+
+feedbackMessage.addEventListener("input", function (evt) {
+  if (feedbackMessage.validity.valueMissing) {
+    feedbackMessage.classList.remove("popup-invalid");
+    feedbackMessage.offsetWidth = feedbackMessage.offsetWidth;
+    feedbackMessage.classList.add("popup-invalid");
   }
 });
 
