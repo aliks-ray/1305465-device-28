@@ -1,3 +1,5 @@
+//Попап с обратной связью
+
 var feedbackLink = document.querySelector(".button-contacts");
 var feedbackPopup = document.querySelector(".popup-feedback");
 var feedbackClose = document.querySelector(".modal-feedback-close");
@@ -84,6 +86,8 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+//Попап с картой
+
 var mapLink = document.querySelector(".small-map");
 var mapPopup = document.querySelector(".popup-map");
 var mapClose = document.querySelector(".modal-map-close");
@@ -106,3 +110,39 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+//Слайдер "сервисы"
+
+var servicesButton = document.querySelectorAll(".services-button");
+var servicesSlide = document.querySelectorAll(".services-slide");
+
+for (var i = 0; i < servicesButton.length; i++) {
+	servicesButton[i].addEventListener("click", (function (index) {
+		return function() {
+			for (var k = 0; k < servicesButton.length; k++) {
+				servicesButton[k].classList.remove("active-services-button");
+				servicesSlide[k].classList.add("visually-hidden");
+			}
+			servicesButton[index].classList.add("active-services-button");
+			servicesSlide[index].classList.remove("visually-hidden");
+		}
+	})(i));
+}
+
+//Главный слайдер
+
+var mainButton = document.querySelectorAll(".main-slider-control");
+var mainSlide = document.querySelectorAll(".main-slider-slide");
+
+for (var i = 0; i < mainButton.length; i++) {
+	mainButton[i].addEventListener("click", (function (index) {
+		return function() {
+			for (var k = 0; k < mainButton.length; k++) {
+				mainButton[k].classList.remove("active-slide");
+				mainSlide[k].classList.add("visually-hidden");
+			}
+			mainButton[index].classList.add("active-slide");
+			mainSlide[index].classList.remove("visually-hidden");
+		}
+	})(i));
+}

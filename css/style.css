@@ -520,6 +520,14 @@ img {
   top: -25px;
 }
 
+.main-slider-slide2 img {
+  top: 0;
+}
+
+.main-slider-slide3 img {
+  top: 60px;
+}
+
 .main-slider-text {
   grid-column-start: 2;
   line-height: 20px;
@@ -665,11 +673,6 @@ img {
   bottom: 3px;
 }
 
-.main-slider-slide2,
-.main-slider-slide3 {
-  display: none;
-}
-
 /*---------- Popular ----------*/
 
 .popular-items {
@@ -731,11 +734,6 @@ img {
 
 /*---------- Services ----------*/
 
-.services-warranty-slide,
-.services-credit-slide {
-  display: none;
-}
-
 .services-slides {
   display: block;
   position: relative;
@@ -769,7 +767,7 @@ img {
 }
 
 .services-slider p {
-  width: 495px;
+  width: 540px;
   letter-spacing: 0.1em;
   margin-left: 124px;
   padding-top: 10px;
