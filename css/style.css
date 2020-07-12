@@ -1695,7 +1695,7 @@ img {
 }
 
 .range-controls .bar {
-  width: 54%;
+  width: 109px;
   height: 2px;
   background-color: var(--special-green);
 }
