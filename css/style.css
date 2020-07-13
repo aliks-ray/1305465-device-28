@@ -828,7 +828,7 @@ img {
   background-color: var(--basic-black);
 }
 
-.active-services-button-text {
+.active-services-button span {
   padding-left: 10px;
 }
 
