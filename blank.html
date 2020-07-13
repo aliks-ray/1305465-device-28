@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов «Device»</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize-min.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -16,7 +16,8 @@
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input class="search-field" type="search" placeholder="Поиск по сайту" autofocus>
+            <label for="search-field" class="visually-hidden">Поиск по сайту</label>
+            <input class="search-field" id="search-field" type="search" placeholder="Поиск по сайту" autofocus>
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="clear-list-style nav-links">

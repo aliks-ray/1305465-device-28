@@ -47,32 +47,10 @@ feedbackForm.addEventListener("submit", function (evt) {
     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
     feedbackPopup.classList.add("popup-error");
   } else {
-    localStorage.setItem("login", feedbackLogin.value);
-    localStorage.setItem("email", feedbackEmail.value);
-  }
-});
-
-feedbackLogin.addEventListener("input", function (evt) {
-  if (feedbackLogin.validity.valid) {
-    feedbackLogin.classList.remove("popup-invalid");
-    feedbackLogin.offsetWidth = feedbackLogin.offsetWidth;
-    feedbackLogin.classList.add("popup-invalid");
-  }
-});
-
-feedbackEmail.addEventListener("input", function (evt) {
-  if (feedbackEmail.validity.valid) {
-    feedbackEmail.classList.remove("popup-invalid");
-    feedbackEmail.offsetWidth = feedbackEmail.offsetWidth;
-    feedbackEmail.classList.add("popup-invalid");
-  }
-});
-
-feedbackMessage.addEventListener("input", function (evt) {
-  if (feedbackMessage.validity.valueMissing) {
-    feedbackMessage.classList.remove("popup-invalid");
-    feedbackMessage.offsetWidth = feedbackMessage.offsetWidth;
-    feedbackMessage.classList.add("popup-invalid");
+    if (isStorageSupport) {
+      localStorage.setItem("login", feedbackLogin.value);
+      localStorage.setItem("email", feedbackLogin.value);
+    }
   }
 });
 

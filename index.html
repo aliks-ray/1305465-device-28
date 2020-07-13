@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов «Device»</title>
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize-min.css" rel="stylesheet">
   <link href="css/style-min.css" rel="stylesheet">
 </head>
 
@@ -16,7 +16,8 @@
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input class="search-field" type="search" placeholder="Поиск по сайту" autofocus>
+            <label for="search-field" class="visually-hidden">Поиск по сайту</label>
+            <input class="search-field" id="search-field" type="search" placeholder="Поиск по сайту" autofocus>
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="clear-list-style nav-links">
@@ -83,15 +84,15 @@
       <h2 class="visually-hidden">Слайдер</h2>
       <ul class="clear-list-style main-slider-controls">
         <li class="main-slider-control">
-          <input class="visually-hidden" id="main-slider-control-1" type="radio" name="slides" value="slide1" checked>
+          <input class="visually-hidden" aria-label="Первый слайд" id="main-slider-control-1" type="radio" name="slides" value="slide1" checked>
           <label for="main-slider-control-1"></label>
         </li>
         <li class="main-slider-control">
-          <input class="visually-hidden" id="main-slider-control-2" type="radio" name="slides" value="slide1">
+          <input class="visually-hidden" aria-label="Второй слайд" id="main-slider-control-2" type="radio" name="slides" value="slide1">
           <label for="main-slider-control-2"></label>
         </li>
         <li class="main-slider-control">
-          <input class="visually-hidden" id="main-slider-control-3" type="radio" name="slides" value="slide1">
+          <input class="visually-hidden" aria-label="Третий слайд" id="main-slider-control-3" type="radio" name="slides" value="slide1">
           <label for="main-slider-control-3"></label>
         </li>
       </ul>
