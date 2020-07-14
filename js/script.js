@@ -7,6 +7,7 @@ var feedbackForm = feedbackPopup.querySelector(".feedback-form");
 var feedbackLogin = feedbackPopup.querySelector(".popup-name");
 var feedbackEmail = feedbackPopup.querySelector(".popup-email");
 var feedbackMessage = feedbackPopup.querySelector(".popup-message");
+var feedbackSubmit = feedbackPopup.querySelector(".button-modal");
 
 var isStorageSupport = true;
 var storageLogin = "";
@@ -40,7 +41,7 @@ feedbackClose.addEventListener("click", function (evt) {
   feedbackPopup.classList.remove("popup-error");
 });
 
-feedbackForm.addEventListener("submit", function (evt) {
+feedbackSubmit.addEventListener("click", function (evt) {
   if (!feedbackLogin.value || !feedbackEmail.value || !feedbackMessage.value) {
     evt.preventDefault();
     feedbackPopup.classList.remove("popup-error");
